@@ -10,6 +10,13 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
+# representation of tables as python classes
+class Restaurant(Base):
+    __tablename__ = 'restaurant'
+
+class MenuItem(Base):
+    __tablename__ = 'menu_item'
+
 # insert at end of file
 engine = create_engine(
     'sqlite://restaurantmenu.db')
