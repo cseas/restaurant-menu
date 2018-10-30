@@ -1,3 +1,4 @@
+# simple method, doesn't use any ORM
 import sqlite3
 conn = sqlite3.connect('restaurantmenu.db')
 
